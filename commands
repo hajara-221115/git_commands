@@ -939,3 +939,37 @@ Pushes all local tags to the remote repository.
 
 Example:
 git push origin --tags
+
+## 14.SUBMODULE COMMANDS
+
+## 1. git submodule add
+syntax:
+git submodule add <repository-url>
+<folder-name>
+
+Purpose:
+Adds another git repository inside the current repository as a submodule.
+
+Example:
+git submodule add
+https://github.com/user/library.git lib
+
+## 2. git submodule init
+syntax:
+git submodule init
+
+Purpose:
+Initializes the submodule configuration in the local repository.
+
+Example:
+git submodule init
+
+## 3. git submodule update
+syntax:
+git submodule update 
+
+Purpose:
+Downloads and updates the submodule content to the correct commit.
+
+Example:
+git submodule update
