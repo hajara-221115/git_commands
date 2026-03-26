@@ -81,4 +81,49 @@ Removes a specific configuration email..
 screenshot proof:
 ![username screenshot](screenshots/username.png)
 
+## 2.  REPOSITORY SETUP COMMANDS
+
+## 1.git init
+syntax:
+git init
+
+Purpose:
+Creates a new empty git repository in the current folder.
+
+Example:
+git init
+
+## 2. git clone
+syntax:
+git clone <repository-url>
+
+Purpose:
+Copies an existing remote repository to your local system.
+
+Example:
+git clone https://github.com/user/project.git
+
+## 3. git clone --branch
+syntax:
+git clone --branch <branch-name>
+<repository-url>
+
+Purpose:
+Clones a specific branch of a repository instead of the default branch.
+
+Example:
+git clone --branch develop
+https://github.com/user/project.git
+
+## 4. git clone --depth
+syntax:
+git clone --depth <number><repository-url>
+
+Purpose:
+Creates a shallow clone with limited commit history to save time and space.
+
+Example:
+git clone --depth 1
+https://github.com/user/project.git
+
 
