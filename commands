@@ -794,3 +794,107 @@ untracked directories.
 
 Example:
 git clean -fd
+
+## 11. REBASING COMMANDS
+
+## 1. GIT REBASE
+syntax:
+git rebase <branch-name>
+
+Purpose:
+Used to move or reapply commits from one branch onto another branch .
+It creates a linear commit history 
+
+Example:
+git checkout feaature-login
+git rebase main
+
+## 2. git rebase -i
+Syntax:
+git rebase -i<commit id>        
+        or
+git rebase -i HEAD ~n
+
+Purpose:
+Performs interactive rebasing,allowing you to:
+Edit commit message
+Combine commits
+Reorder commits
+remove commits
+
+Example:
+git rebase -i HEAD~3
+
+## 3.git rebase --continue
+Syntax:
+git rebase --continue
+
+Purpose:
+Continues the rebasing process after resolving conflicts.
+When conflicts happen during rebase:
+Fix the conflicting file.
+Add them to staging.
+Continue rebase.
+
+Example:
+git add index.html
+git rebase --continue
+
+## 4. git rebase --abort
+syntax:
+git rebase --abort
+
+Purpose:
+Stops the rebase procedd and returns the branch to its original state before rebasing started.
+
+Example:
+git rebase --abort
+
+## 12.CHERRY PICK & PATCH COMMANDS
+
+## 1.git cherry-pick
+syntax:
+git cherry-pick <commit-id>
+
+Purpose:
+This command is used to apply a speccific commit from one branch to another branch .
+Instead of merging the entire branch,it copies only the selected commit.
+
+Example:
+git checkout main
+git cherry-pick a1b2c3d
+
+## 2.git format-patch
+syntax:
+git format-patch <commit-id>    or      git format-patch-n
+
+Purpose:
+This command creates patch files (.patch) from commitd.
+These patch files can be shared with others or applied to another repository.
+
+Example:
+git format-patch-2
+
+## 3. git apply
+syntax:
+git apply<patch-file>
+
+Purpose:
+This command applies changes from a patch file to the working directory.
+It does not create a commit automatically.
+
+Example:
+git apply 0001-added-login-feature.patch
+
+## 4. git am
+syntax:
+git am <patch-file>
+
+Purpose:
+This commands applies patch files and automatically creates commits.
+It is mainly used when patches are recieved through email or shared patch files.
+
+Examplle:
+git am 0001-addded-login-feature.patch
+
+
