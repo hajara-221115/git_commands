@@ -898,3 +898,44 @@ Examplle:
 git am 0001-addded-login-feature.patch
 
 
+## 13.TAGGING COMMANDS
+
+## 1.git tag
+syntax:
+git tag
+
+Purpose:
+Cretaes a tag for the current commit to mark a specific version.
+
+Example:
+git tag v1.0
+
+## 2.git tag -a
+syntax:
+git tag -a <tag-name>-m "message"
+
+Purpose:
+Creates an annotated tag with a message for better version information.
+
+Example:
+git tag -a v1.1 -m "first stable release"
+
+## 3.git tag -d
+syntax:
+git tag -d <tag-name>
+
+Purpose:
+Deletes an existing local tag.
+
+Exaple:
+git tag -d v1.0
+
+## 4. git push origin --tags
+syntax:
+git push origin --tags
+
+Purpose:
+Pushes all local tags to the remote repository.
+
+Example:
+git push origin --tags
