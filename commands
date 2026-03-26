@@ -648,3 +648,67 @@ Forces git to overwrite the remote branch with local changes.
 
 Example:
 git push --force origin main
+
+
+## 9.STASH COMMANDS
+
+## 1.git stash
+syntax:
+git stash
+
+Purppose:
+Temporarily saves your uncommited changes and cleans the working directory so you can 
+work something on else.
+
+Example:
+git stash
+
+## 2.git stash list
+syntax:
+git stash list
+
+Purpose:
+Displays the list of all saved stashes.
+
+Example:
+git stash list
+
+## 3.git stash pop
+Syntax:
+git stash pop
+
+Purpose:
+Apllies the latest stash changes and removes it from the stash list.
+
+Example:
+git stash pop
+
+## 4.git stash apply
+Syntax:
+git stash pop
+
+Purpose:
+Apply saved stash changes but keeps the stash in the stash list.
+
+Example:
+git stash apply
+
+## 5.git stash drop
+Syntax:
+git stash drop <stash-id>
+
+Purpose:
+Deletes a specific stash entry.
+
+Example:
+git stash drop stash@{0}
+
+## 6. git stsash clear
+Syntax:
+git stash clear
+
+Purpose:
+Delete all stash entries permanently.
+
+Example:
+git stash clear
